@@ -1,0 +1,266 @@
+shealth 
+
+paper identified:
+
+the issue of
+synchronizing and having a real-time access to such data exacerbates the problem even more. Therefore,
+a system that guarantees the integrity, accessibility, correctness and security of medical data in a highly
+synchronized environment is crucial for governments to accurately project their future needs.
+
+paper objective:
+
+In this paper,
+we present Smart-Health (SHealth), a blockchain-based health management system. In its crux, SHealth is a
+private multi-layered blockchain integrated with a multi-tiered addressing scheme that defines the privileges
+and permissions of entities in the system. Blockchain-based systems assure security, reliability, availability,
+resistance against tampering and malicious attacks, seamless integration, and easy data management.
+SHealth proposes a complete autonomy to its users.
+
+methodology:
+
+A smart contract is basically an executable script that
+resides on top of the blockchain that will be executed only
+when certain conditions are being met or if it has been
+triggered by an external element. Hence, the smart
+contract itself has its own address in the network. To execute
+the smart contracts by triggering, nodes in the network issue
+transactions addressed to those contracts directly. The
+elegance of smart contracts is that they basically allow us
+to write any logic in code while setting the conditions and
+expected outcomes for that logic.
+ 
+project findings:
+
+. SHealth utilizes smart contracts which are scripts
+that equip the system with fully automated and secured
+management capabilities. Moreover, SHealth deploys the
+PBFT consensus mechanism which is known to have low
+overhead and requires less resources than other consensus
+mechanisms.
+------------------------------------------------------------------------------------------------------
+
+break glass
+
+problem identified:
+
+In emergency care, fast and efficient treatment is vital.Unfortunately, the complete EMR of a patient is often not available during an emergency situation to all
+treatment teams. Cloud services emerge as a promising solution to this problem by allowing ubiquitous access to information.
+However, EMR storage and sharing through clouds raise several concerns about security and privacy.
+ 
+paper objective:
+ 
+this protocol through which all treatment teams involved in the emergency care can securely decrypt relevant data from the patient’s
+EMR and add new information about the patient’s status. Furthermore, our protocol ensures that treatment teams will only access
+the patient’s EMR for the period during which the patient is under their care.it present a formal security analysis of our
+protocol and some initial experimental results
+
+methodology:
+
+Break-glass is a term used to refer to security solutions that
+provide access to information in emergency situations.
+. The
+protocol securely enables sharing of EMR among multiple
+treatment teams through a cloud platform. The proposed solution adopts the concept of attribute-based encryption (ABE)
+associated with policies defined for emergency situations.
+Additionally, it adopts token authentication to grant and revoke access during the timeline of acute stroke treatment.
+
+
+paper findings:
+
+. The proposed scheme enables healthcare professionals
+to decrypt a patient’s encrypted data by making use of timebased tokens that are issued during the emergency situation.
+After the expiration of the tokens, the users are revoked and
+can no longer access the patient’s data. The security of our
+scheme is proven using both simulation-based security as well
+as direct attacks on the protocol.
+
+----------------------------------------------------------------------------------------------------------------------
+
+data deduplication
+
+problem identified:
+
+Since network storage services achieve widespread adoption, security and performance issues are becoming primary
+concerns, affecting the scalability of storage systems.However, the existing data auditing mechanism with deduplication cannot solve the problems such as high cost and
+reliance on trusted third parties in traditional approaches, and it also faces the problem of repeated auditing of data shared by
+multiple-tenant.
+
+paper objective:
+
+This paper proposes a blockchain-based deduplicatable data auditing mechanism.We first design a client-side data
+deduplication scheme based on bilinear-pair techniques to reduce the burden on users and service providers. On this basis, we achieve a
+trustworthy and efficient data auditing mechanism that helps to check data integrity by using both the blockchain technique and bilinear
+pairing cryptosystem.. The blockchain system is used to record the behaviors of entities in both data outsourcing and auditing processes
+so that the corresponding immutable records can be used to not only ensure the credibility of audit results but also help to monitor
+unreliable third-party auditors.
+
+methodology:
+
+The system model of our scheme includes five kinds of
+entities: the user, the network storage service provider (SP),
+the TPA, the blockchain nodes, and the system manager. (blockchain-enabled deduplicatable data auditing
+mechanism): The blockchain-enabled deduplicatable data
+auditing mechanism consists of three algorithms (Setup,
+Upload, CheckLog) and two interactive protocols (Dedup,
+Audit).
+{{. The TPA will validate if the proof is correct
+and publish the audit results on the blockchain. The audit
+results will be periodically checked by users to supervise
+and exclude untrusted TPAs.}}
+
+paper findings:
+
+This paper proposes a blockchain-enabled deduplicatable
+data auditing mechanism to improve the efficiency of the
+network storage service and protect the users’ data.
+we designed
+a blockchain-based data audit mechanism to ensure the
+integrity of outsourced data and avoid repeated audits by
+multiple tenants. The blockchain technique is introduced to
+record the data auditing log, thereby monitoring untrusted
+TPA during the data auditing process.
+
+-------------------------------------------------------------------------------------------------------------------------------
+public auditing
+
+problem findings:
+
+Cloud storage enables applications to efficiently manage their remote data but facing the risk of 
+being tampered with.
+. One of the most critical challenges is how to verify the data integrity for data 
+users in an untrustworthy environment provided by a cloud service provider (CSP). 
+
+paper objective:
+ This paper utilizes blockchain technique to develop a novel public auditing 
+scheme for verifying data integrity in cloud storage. In the proposed scheme, different from the 
+existing works that involve three participatory entities, only two predefined entities (i.e. data 
+owner and cloud service provider) who may not trust each other are involved, and the third party 
+auditor for data auditing is removed.
+The objective of this paper is to apply the blockchain technique to public auditing for big data in cloud storage, in order to provide 
+a better auditing service without any help of third party auditor. Specifically, we utilize the blockchain technique to improve the data 
+security while reducing the overheads (computation and communication overheads) of the existing methods.
+
+methodology:
+
+, data owners store the lightweight verification 
+tags on the blockchain and generate a proof by constructing the Merkle Hash Tree using the 
+hashtags to reduce the overhead of computation and communication for integrity verification. 
+Besides, this work is able to achieve 100% confidence of auditing theoretically, as the hashtag of 
+each data block is utilized to build the Merkle Hash Tree for the data integrity verification.
+we adopt the cryptography methods of blockchain to 
+provide a better auditing service such that it can improve the security and reduce the overheads during the auditing process.
+
+paper findings:
+
+In the proposed scheme, 
+the DO outsources its files to the cloud and stores the corresponding tags to the blockchain. Then the DO randomly selects another 
+user in the blockchain network as a public auditor to audit its file using its public key.
+With the proposed scheme, 
+dishonest behaviors of CSP or DOs can be resisted by the blockchain during the auditing procedure. We have addressed the problem 
+of achieving efficient data integrity verification in cloud storage by developing a novel public auditing scheme based on blockchain 
+technique. We have shown that the proposed scheme can defend against malicious entities and the 51% attack in the blockchain 
+network through security analysis.
+------------------------------------------------------------------------------------------------------------------------------
+
+secret data sharing 
+
+problem identified:
+
+A personal health record (PHR) system 
+permits patients to control and share data concerning their health conditions by particular peoples. 
+In the case of an emergency, the patient is unable to approve the emergency staff access to the PHR. 
+Furthermore, a history record management system of the patient’s PHR is required, which exhibits 
+hugely private personal data (e.g., modification date, name of user, last health condition, etc.).
+
+paper objective:
+
+. In 
+this paper, we suggest a healthcare management framework that employs blockchain technology to 
+provide a tamper protection application by considering safe policies. These policies involve identifying extensible access control, auditing, and tamper resistance in an emergency scenario.
+the proposed framework affords superior performance compared to 
+the state-of-the-art healthcare systems concerning accessibility, privacy, emergency access control, 
+and data auditing.
+
+methodology:
+we present the proposed emergency access control management system, which utilizes blockchain technology for preserving PHR data privacy. All the data 
+on the blockchain network are shared between the nodes. We develop a system that generates a time-stamped log for all the transactions on the network without engaging a PHR 
+owner or any third party utilizing the Hyperledger Composer-SDK and NodeJS.
+All the activities are controlled with permissions and the smart contracts that affect data retrieval 
+from the Ledger.
+
+paper findings:
+
+we utilized the smart contracts in blockchain technology to provide security 
+policies that patients can manage the access rules of other participants in the healthcare 
+system using the consortium strategy. Besides, our system affords the historian records 
+for auditing that stores the history of transactions while patients are in an emergency. 
+Moreover, they can trace the history of the records held by other participants (doctors) 
+after recovery. We experienced our framework using the Hyperledger Composer playground to evaluate its performance of our framework.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MODULES:
+
+The proposed secure and collaborated health record sharing process is to implement using following phases,
+Framework Creation
+Health Record Storage
+Set Access Privileges
+Blockchain Creation
+Collaborator Access
+Emergency Access
+Research Entity Access
+
+
+MODULES DESCRIPTION:
+
+Framework Creation 
+The Framework Creation Module of Sec-Health establishes the fundamental infrastructure for the entire protocol. 
+It involves the setup of a decentralized blockchain network. 
+It provides a decentralized and distributed storage solution, allowing for encrypted health records to be securely stored. 
+User registration is an integral part of this module, ensuring that each participant is uniquely identified within the system, paving the way for a secure and collaborative healthcare environment.
+
+
+Health Record Storage 
+The Health Record Storage Module focuses on the secure generation, encryption, and storage of health records. 
+Collaborators, such as physicians and nurses, generate health records for patients. 
+These records undergo encryption using the Advanced Encryption Standard (AES), ensuring robust confidentiality. 
+The encrypted records are then stored securely in the blockchain network. 
+This module ensures the integrity and privacy of health records within the Sec-Health framework.
+
+
+Health Record Storage 
+The Health Record Storage Module focuses on the secure generation, encryption, and storage of health records. 
+Collaborators, such as physicians and nurses, generate health records for patients. 
+These records undergo encryption using the Advanced Encryption Standard (AES), ensuring robust confidentiality. 
+The encrypted records are then stored securely in the blockchain network. 
+This module ensures the integrity and privacy of health records within the Sec-Health framework.
+
+
+Blockchain Creation 
+The Blockchain Creation Module is dedicated to the creation and management of the blockchain network within Sec-Health. 
+It integrates a consensus mechanism to validate and record transactions securely. 
+The authority attests to public data necessary for the system's operation, and this public data is securely stored in the blockchain. 
+The consensus mechanism ensures that the blockchain is a trusted and decentralized ledger, providing a robust foundation for the secure and transparent management of health record metadata.
+
+
+Collaborator Access 
+The Collaborator Access Module facilitates authorized collaborators' access to health records. 
+It involves the validation of cryptographic material possessed by collaborators and the secure decryption of health records based on access policies defined by patients. 
+Controlled access mechanisms ensure that collaborators can only access records if they fulfill the specified access criteria. 
+This module guarantees that authorized healthcare professionals can securely retrieve and contribute to patients' health records, maintaining a balance between accessibility and privacy.
+
+
+Emergency Access 
+The Emergency Access Module addresses the critical need for rapid and legitimate access to health records during emergency medical situations. 
+It involves collaborative efforts between emergency servers, collaborators, and call center attendants. 
+The module ensures swift coordination and validation processes, allowing designated collaborators to gain immediate access to essential health information. 
+This feature is crucial for delivering timely and effective medical care during emergencies.
+
+
+Research Entity Access 
+The Research Entity Access Module enables research entities to access anonymized health records for research purposes. 
+Patients provide consent for their records to be used in research studies. 
+Anonymity preservation mechanisms maintain the privacy of both collaborators and patients. 
+Research entities can securely access anonymized data through the blockchain, fostering collaboration between healthcare practitioners and researchers in a privacy-preserving manner.
